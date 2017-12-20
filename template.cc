@@ -53,22 +53,22 @@ template<class ...T> void Print(const double& x, const T& ...args) { printf("%.1
 template<class ...T> void Print(const string& x, const T& ...args) { printf("%s ", x.c_str()); Print(args...); }
 template<class ...T> void Print(const char& x, const T& ...args)   { printf("%c ", x);         Print(args...); }
 
-void Read(const int& x)    { scanf("%d", &x);        }
-void Read(const uint& x)   { scanf("%u", &x);        }
-void Read(const ll& x)     { scanf("%lld", &x);      }
-void Read(const ull& x)    { scanf("%llu", &x);      }
-void Read(const float& x)  { scanf("%f", &x);        }
-void Read(const double& x) { scanf("%lf", &x);       }
-void Read(const string& x) { scanf("%s", x.c_str()); }
-void Read(const char& x)   { scanf("%c", &x);        }
-template<class ...T> void Read(const int& x, const T& ...args)    { scanf("%d", &x);        Read(args...); }
-template<class ...T> void Read(const uint& x, const T& ...args)   { scanf("%u", &x);        Read(args...); }
-template<class ...T> void Read(const ll& x, const T& ...args)     { scanf("%lld", &x);      Read(args...); }
-template<class ...T> void Read(const ull& x, const T& ...args)    { scanf("%llu", &x);      Read(args...); }
-template<class ...T> void Read(const float& x, const T& ...args)  { scanf("%f", &x);        Read(args...); }
-template<class ...T> void Read(const double& x, const T& ...args) { scanf("%lf", &x);       Read(args...); }
-template<class ...T> void Read(const string& x, const T& ...args) { scanf("%s", x.c_str()); Read(args...); }
-template<class ...T> void Read(const char& x, const T& ...args)   { scanf("%c", &x);        Read(args...); }
+void Read(int& x)    { scanf("%d", &x);        }
+void Read(uint& x)   { scanf("%u", &x);        }
+void Read(ll& x)     { scanf("%lld", &x);      }
+void Read(ull& x)    { scanf("%llu", &x);      }
+void Read(float& x)  { scanf("%f", &x);        }
+void Read(double& x) { scanf("%lf", &x);       }
+void Read(string& x) { scanf("%s", x.c_str()); }
+void Read(char& x)   { scanf("%c", &x);        }
+template<class ...T> void Read(int& x, T& ...args)    { scanf("%d", &x);        Read(args...); }
+template<class ...T> void Read(uint& x, T& ...args)   { scanf("%u", &x);        Read(args...); }
+template<class ...T> void Read(ll& x, T& ...args)     { scanf("%lld", &x);      Read(args...); }
+template<class ...T> void Read(ull& x, T& ...args)    { scanf("%llu", &x);      Read(args...); }
+template<class ...T> void Read(float& x, T& ...args)  { scanf("%f", &x);        Read(args...); }
+template<class ...T> void Read(double& x, T& ...args) { scanf("%lf", &x);       Read(args...); }
+template<class ...T> void Read(string& x, T& ...args) { scanf("%s", x.c_str()); Read(args...); }
+template<class ...T> void Read(char& x, T& ...args)   { scanf("%c", &x);        Read(args...); }
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  main                                                                                                                      /
@@ -79,3 +79,4 @@ int main() {
 
   return 0;
 }
+
