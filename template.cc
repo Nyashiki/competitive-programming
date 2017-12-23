@@ -59,7 +59,7 @@ void Read(ll& x)     { scanf("%lld", &x);      }
 void Read(ull& x)    { scanf("%llu", &x);      }
 void Read(float& x)  { scanf("%f", &x);        }
 void Read(double& x) { scanf("%lf", &x);       }
-void Read(string& x) { scanf("%s", x.c_str()); }
+void Read(string& x) { cin >> x;               }
 void Read(char& x)   { scanf("%c", &x);        }
 template<class ...T> void Read(int& x, T& ...args)    { scanf("%d", &x);        Read(args...); }
 template<class ...T> void Read(uint& x, T& ...args)   { scanf("%u", &x);        Read(args...); }
@@ -67,16 +67,17 @@ template<class ...T> void Read(ll& x, T& ...args)     { scanf("%lld", &x);      
 template<class ...T> void Read(ull& x, T& ...args)    { scanf("%llu", &x);      Read(args...); }
 template<class ...T> void Read(float& x, T& ...args)  { scanf("%f", &x);        Read(args...); }
 template<class ...T> void Read(double& x, T& ...args) { scanf("%lf", &x);       Read(args...); }
-template<class ...T> void Read(string& x, T& ...args) { scanf("%s", x.c_str()); Read(args...); }
+template<class ...T> void Read(string& x, T& ...args) { cin >> x;               Read(args...); }
 template<class ...T> void Read(char& x, T& ...args)   { scanf("%c", &x);        Read(args...); }
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  main                                                                                                                      /
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 int main() {
 
   return 0;
 }
 
+
+/* */
