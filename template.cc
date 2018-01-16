@@ -24,8 +24,8 @@ using namespace std;
 //  types                                                                                                                        /
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 typedef unsigned int uint;
-typedef int64_t ll;
-typedef uint64_t ull;
+typedef long long int ll;
+typedef unsigned long long int ull;
 
 typedef pair<ll, ll> P;
 inline P operator+(const P& p1, const P& p2) { return P(p1.first + p2.first, p1.second + p2.second); }
@@ -71,13 +71,16 @@ template<class ...T> void Read(string& x, T& ...args) { cin >> x;               
 template<class ...T> void Read(char& x, T& ...args)   { scanf("%c", &x);        Read(args...); }
 
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  Utility                                                                                                                   /
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+template<typename T> int Size(T elem) { return (int)elem.size(); }
+
+// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //  main                                                                                                                      /
 // ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 int main() {
-
+  
   return 0;
 }
-
-
 /* */
